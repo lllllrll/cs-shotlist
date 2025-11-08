@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shotlist - Workshop "Caminos Sonoros - Sonidos de la Naturaleza" (Encuentro 2)</title>
+  <style>
+    :root{--bg:#ffffff;--card:#fbfbfb;--accent:#2b9348;--muted:#6b6b6b}
+    body{font-family:Inter, Roboto, Arial, sans-serif;background:var(--bg);color:#111;margin:0;padding:18px}
+    header{display:flex;gap:12px;align-items:center}
+    h1{margin:0;font-size:20px}
+    p.lead{color:var(--muted);margin:6px 0 18px}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    .card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(10,10,10,0.03)}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .small{font-size:13px;color:var(--muted)}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:8px;border-bottom:1px solid #eee;text-align:left}
+    th{background:#fafafa}
+    .check{display:flex;align-items:center;gap:10px}
+    input[type=checkbox]{width:18px;height:18px}
+    .roles{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;border:0;cursor:pointer}
+    footer{margin-top:14px;color:var(--muted);font-size:13px}
+    @media(min-width:700px){.grid{grid-template-columns:1fr 360px}}
+    .task-done{opacity:0.6;text-decoration:line-through}
+    .time{font-weight:600;color:#333}
+    .badge{background:#eefaf0;color:var(--accent);padding:4px 8px;border-radius:999px;font-size:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Shotlist — Workshop al aire libre «Caminos Sonoros - Sonidos de la Naturaleza» (Encuentro 2)</h1>
+      <p class="lead">Formato práctico para fotógrafo y videógrafo.</p>
+    </div>
+    <div style="margin-left:auto;text-align:right">
+      <div class="badge">Check list interactivo</div>
+      <div class="small">Imprimí o usá en el celular</div>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h3>Datos rápidos</h3>
+      <p class="small">Lugar: ____________________ &nbsp; | &nbsp; Fecha: __________ &nbsp; | &nbsp; Hora inicio: <span class="time">09:00</span></p>
+      <div class="row" style="margin-top:8px">
+        <div>
+          <strong>Roles</strong>
+          <div class="roles small">
+            <div>📸 Fotógrafo: <input placeholder="Nombre" /></div>
+            <div>🎥 Videógrafo: <input placeholder="Nombre" /></div>
+            <div>🔊 Sonido: <input placeholder="Nombre" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="card">
+      <h3>Checklist rápido</h3>
+      <div class="small" style="margin-bottom:8px">Tocá la casilla cuando esté listo / hecho.</div>
+      <div style="display:grid;gap:8px">
+        <label class="check"><input type="checkbox" data-key="arrival" /> Llegada y set up antes de participantes</label>
+        <label class="check"><input type="checkbox" data-key="plantwave_audio" /> Grabación directa audio PlantWave (line out)</label>
+        <label class="check"><input type="checkbox" data-key="atmo" /> Micro ambiente: viento, pájaros</label>
+        <label class="check"><input type="checkbox" data-key="b-roll" /> B-roll: hojas, insectos, luz</label>
+        <label class="check"><input type="checkbox" data-key="kids_closeups" /> Primeros planos de niñ@s y reacciones</label>
+        <label class="check"><input type="checkbox" data-key="flatlay" /> Flat-lays: cuaderno + hoja + dispositivo</label>
+        <label class="check"><input type="checkbox" data-key="final_circle" /> Foto/video final: círculo con mandalas</label>
+        <label class="check"><input type="checkbox" data-key="backup" /> Copia de seguridad (SD/SSDs) hecha</label>
+      </div>
+      <div style="margin-top:10px;text-align:right">
+        <button class="btn" id="clearBtn">Borrar</button>
+      </div>
+    </aside>
+
+    <section class="card">
+      <h3>Shotlist detallado (orden recomendado)</h3>
+      <table>
+        <thead>
+          <tr><th>#</th><th>Tipo</th><th>Qué filmar/fotografiar</th><th>Nota práctica</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Video/Foto</td><td>General del lugar — llegada de lxs niñxs</td><td>Wide, dron si hay; luz suave</td></tr>
+          <tr><td>2</td><td>Foto</td><td>Equipo y PlantWave en mesa (setup)</td><td>Macros del dispositivo y cables</td></tr>
+          <tr><td>3</td><td>Foto</td><td>Manos con cuadernos y lápices</td><td>Flat-lay posible</td></tr>
+          <tr><td>4</td><td>Video</td><td>Explicación del docente (petaca/petaca)</td><td>Plaidica: petaca al docente</td></tr>
+          <tr><td>5</td><td>Foto</td><td>Conexión de sensor al hoja — macro</td><td>Enfocar textura y cable</td></tr>
+          <tr><td>6</td><td>Video</td><td>Primera reproducción del sonido — reacción</td><td>Captar sorpresa, manos en oreja</td></tr>
+          <tr><td>7</td><td>Video</td><td>Grupo buscando plantas — movimiento</td><td>Steadicam o estabilizador</td></tr>
+          <tr><td>8</td><td>Foto</td><td>Niñxs escuchando con ojos cerrados</td><td>Close-up emocional</td></tr>
+          <tr><td>9</td><td>Video</td><td>Comparación de sonidos entre dos plantas</td><td>Insert audio + pantalla de PlantWave</td></tr>
+          <tr><td>10</td><td>Foto</td><td>Notas en cuaderno: palabras y dibujos</td><td>Macro, legible</td></tr>
+          <tr><td>11</td><td>Video</td><td>Entrevista rápida (1 frase) a 5 niñxs</td><td>Pedir repetir: “¿Qué sentiste?”</td></tr>
+          <tr><td>12</td><td>Foto</td><td>Retrato del docente con PlantWave</td><td>Estilo inspirador</td></tr>
+          <tr><td>13</td><td>Video</td><td>Ronda final en círculo — cierre</td><td>Plano cenital si posible</td></tr>
+          <tr><td>14</td><td>Foto/Video</td><td>Detalles b-roll: sol, sombras, gotas</td><td>Slow motion útil</td></tr>
+          <tr><td>15</td><td>Foto</td><td>Foto grupal con dispositivo al centro</td><td>Sonrientes, natural</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h3>Notas técnicas y recomendaciones</h3>
+      <ul class="small">
+        <li>Grabá audio directo del PlantWave (si tiene salida). Guardá archivo .wav independiente.</li>
+        <li>Usá petacas para voz del docente y tomá ambiente con un par de micros (ambience stereo).</li>
+        <li>Foto en RAW. Hacer backup de tarjetas cada 30–60 minutos.</li>
+        <li>Filmar horizontales en 4K (16:9) y clips verticales para Reels/Shorts (9:16) cuando capture reacciones.</li>
+        <li>Evitar flash directo; usar reflector o fill si hay sombras fuertes en caras.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>Extras útiles</h3>
+      <p class="small">Textos cortos para redes (ejemplos):</p>
+      <ul class="small">
+        <li>“Hoy escuchamos a las plantas: un taller que mezcla ciencia, sonido y arte.”</li>
+        <li>“¿Sabías que las plantas generan patrones sonoros? Mirá lo que descubrimos.”</li>
+      </ul>
+      <p class="small">Archivos a entregar:</p>
+      <ol class="small">
+        <li>Carpeta fotos RAW seleccionadas (40–60 fotos)</li>
+        <li>60–90s promo editado (vertical + horizontal)</li>
+        <li>10–15 clips de 10–20s para Shorts/TikTok</li>
+        <li>Audio PlantWave .wav por planta</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="small">Hecho con ❤️ — Equipo Caminos Sonoros • Revisá este listado en el celular y tildá lo que vas completando.</div>
+  </footer>
+
+  <script>
+    // Persistencia local simple para el checklist
+    const checks = document.querySelectorAll('input[type=checkbox]');
+    checks.forEach(ch => {
+      const key = 'shotlist_'+(ch.dataset.key || ch.nextSibling?.textContent?.trim() || ch.parentElement.textContent.trim()).replace(/\s+/g,'_').toLowerCase();
+      const saved = localStorage.getItem(key);
+      if(saved === '1') ch.checked = true;
+      ch.addEventListener('change', ()=>{
+        localStorage.setItem(key, ch.checked? '1':'0');
+        ch.parentElement.classList.toggle('task-done', ch.checked);
+      });
+      if(ch.checked) ch.parentElement.classList.add('task-done');
+    });
+    document.getElementById('clearBtn').addEventListener('click', ()=>{
+      checks.forEach(ch=>{
+        const key = 'shotlist_'+(ch.dataset.key || ch.nextSibling?.textContent?.trim() || ch.parentElement.textContent.trim()).replace(/\s+/g,'_').toLowerCase();
+        localStorage.removeItem(key);
+        ch.checked = false;
+        ch.parentElement.classList.remove('task-done');
+      });
+    });
+  </script>
+</body>
+</html>
